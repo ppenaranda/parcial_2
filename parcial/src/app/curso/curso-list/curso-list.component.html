@@ -1,0 +1,22 @@
+<div class="container-fluid mt-2">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Plataforma</th>
+        <th scope="col">Lanzamiento</th>
+        <th scope="col">Duración</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let c of cursos">
+        <th scope="row" >{{c.id}}</th>
+        <td><a href="#">{{c.title}}</a></td>
+        <td>{{c.platform}}</td>
+        <td>{{c.launch_year}}</td>
+        <td>{{c.duration_hours}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
